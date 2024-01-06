@@ -112,3 +112,11 @@ header {
 .section-2 .img {
     background: url(../img/img-right.jpg) center/cover;
 }
+
+/* ----------------CONTACT--------------- */
+
+.contact {
+    text-align: center;
+    position: relative;
+    padding: 60px 0;
+  }
