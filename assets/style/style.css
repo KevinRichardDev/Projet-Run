@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Source Sans Pro";
-    src: url(./fonts/SourceSansPro-Light.ttf);
+    src: url(../fonts/SourceSansPro-Light.ttf);
 }
 
 * {
@@ -59,7 +59,7 @@ header {
     box-shadow: inset 1px ;
 }
 .img-banner {
-    background: url(./img/banner.jpg) right/cover;
+    background: url(../img/banner.jpg) right/cover;
 }
 
 /* ----------------SECTION-1--------------- */
@@ -70,7 +70,7 @@ header {
     min-height: 400px;
 }
 .section-1 .img {
-    background: url(./img/img-left.jpg) center/cover;
+    background: url(../img/img-left.jpg) center/cover;
 }
 
 /* ----------------SECTION-2--------------- */
@@ -81,5 +81,5 @@ header {
     min-height: 400px;
 }
 .section-2 .img {
-    background: url(./img/img-right.jpg) center/cover;
+    background: url(../img/img-right.jpg) center/cover;
 }
