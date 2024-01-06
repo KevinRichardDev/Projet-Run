@@ -8,12 +8,19 @@
     src: url(../fonts/SourceSansPro-Light.ttf);
 }
 
+a, a:active {
+    color: black;
+}
+a{
+    transition: .3s;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
+    font-family: "Source Sans Pro";
 }
 
 h1 {
@@ -40,6 +47,11 @@ p {
     margin-top: 15px;
     background: transparent;
     cursor: pointer;
+    transition: .3s;
+}
+.button:hover ,a:hover{
+    color: skyblue;
+    border: 1px solid skyblue;
 }
 
 .section-1,
