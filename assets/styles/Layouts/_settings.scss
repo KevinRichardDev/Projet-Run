@@ -3,13 +3,13 @@
   src: url(../../fonts/SourceSansPro-Light.ttf);
 }
 
-$font1: "sourcesanspro";
+$font1: "Source Sans Pro";
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none;
+  font-family: $font1, sans-serif;
+  outline: none;
 }
