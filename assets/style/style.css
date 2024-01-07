@@ -1,67 +1,66 @@
 /* ----------------GLOBAL--------------- */
 
-
-
-
 @font-face {
-    font-family: "Source Sans Pro";
-    src: url(../fonts/SourceSansPro-Light.ttf);
+  font-family: "Source Sans Pro";
+  src: url(../fonts/SourceSansPro-Light.ttf);
 }
 
-a, a:active {
-    color: black;
+a,
+a:active {
+  color: black;
 }
-a{
-    transition: .3s;
+a {
+  transition: 0.3s;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    font-family: "Source Sans Pro";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Source Sans Pro";
 }
 
 h1 {
-    font-family: "Source Sans Pro";
-    font-size: 3.4rem;
-    font-weight: 500;
-    margin: 15px auto;
+  font-family: "Source Sans Pro";
+  font-size: 3.4rem;
+  font-weight: 500;
+  margin: 15px auto;
 }
 
 h2 {
-    font-family: "Source Sans Pro";
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin: 15px auto;
+  font-family: "Source Sans Pro";
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 15px auto;
 }
 p {
-    font-size: 1.3rem;
-    line-height: 35px;
-    font-family: "Source Sans Pro";
+  font-size: 1.3rem;
+  line-height: 35px;
+  font-family: "Source Sans Pro";
 }
 
 .button {
-    display: inline-block;
-    color: black;
-    font-weight: 900;
-    font-family: "Source Sans Pro";
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    padding: 12px 35px;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    margin-top: 15px;
-    background: transparent;
-    cursor: pointer;
-    transition: .3s;
-    margin-top: 10px;
-    letter-spacing: 2px;
+  display: inline-block;
+  color: black;
+  font-weight: 900;
+  font-family: "Source Sans Pro";
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 12px 35px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-top: 15px;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  letter-spacing: 2px;
 }
-.button:hover ,a:hover{
-    color: skyblue;
-    border: 1px solid skyblue;
+.button:hover,
+a:hover {
+  color: skyblue;
+  border: 1px solid skyblue;
 }
 
 .section-1,
@@ -70,65 +69,80 @@ p {
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.082);
 }
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 85%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 85%;
+  margin: 0 auto;
 }
-
 
 /* ----------------HEADER--------------- */
 
-
 header {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    box-shadow: inset 1px ;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: inset 1px;
 }
 .img-banner {
-    background: url(../img/banner.jpg) right/cover;
+  background: url(../img/banner.jpg) right/cover;
 }
 
 /* ----------------SECTION-1--------------- */
 
-.section-1{
-    display: grid;
-    grid-template-columns: 35% 65%;
-    min-height: 400px;
+.section-1 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  min-height: 400px;
 }
 .section-1 .img {
-    background: url(../img/img-left.jpg) center/cover;
+  background: url(../img/img-left.jpg) center/cover;
 }
 
 /* ----------------SECTION-2--------------- */
 
-.section-2{
-    display: grid;
-    grid-template-columns: 65% 35%;
-    min-height: 400px;
+.section-2 {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  min-height: 400px;
 }
 .section-2 .img {
-    background: url(../img/img-right.jpg) center/cover;
+  background: url(../img/img-right.jpg) center/cover;
 }
 
 /* ----------------CONTACT--------------- */
 
 .contact {
-    text-align: center;
-    position: relative;
-    padding: 60px 0;
-  }
+  text-align: center;
+  position: relative;
+  padding: 60px 0;
+}
 
 form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .form-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
+  display: grid;
+  width: 80%;
+  height: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+    "input1 input2"
+    "tarea tarea";
+}
+
+input[type="text"],
+textarea {
+    flex-direction: column;
+    resize: none;
+}
+
+textarea {
+  grid-area: tarea;
 }
