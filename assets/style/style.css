@@ -19,6 +19,7 @@ a {
   text-decoration: none;
   outline: none;
   font-family: "Source Sans Pro";
+  list-style-type: none;
 }
 
 h1 {
@@ -31,7 +32,7 @@ h1 {
 h2 {
   font-family: "Source Sans Pro";
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 500;
   margin: 15px auto;
 }
 p {
@@ -54,13 +55,16 @@ p {
   background: transparent;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 10px;
+  margin-top: 20px;
   letter-spacing: 2px;
 }
-.button:hover,
-a:hover {
+.button:hover{
   color: skyblue;
   border: 1px solid skyblue;
+
+}
+a:hover {
+  color: skyblue;
 }
 
 .section-1,
@@ -124,15 +128,25 @@ form {
   justify-content: center;
   flex-direction: column;
 }
+form:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  border: 1px solid #dad9d9;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .form-grid {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 30% 1fr;
   align-items: center;
   max-width: 40%;
   gap: 10px;
+  margin: 0 auto;
   grid-template-areas:
     "input1 input2"
     "tarea tarea";
@@ -148,10 +162,10 @@ label {
 }
 
 .form-grid div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type="text"],
@@ -161,13 +175,45 @@ textarea {
   background: transparent;
   font-family: "Source Sans Pro", sans-serif;
   border: 1px solid #ccc;
-  width: 100%;
-  border-radius: 5px;
+  min-width: 100%;
+  border-radius: 4px;
   padding: 5px;
   min-height: 40px;
 }
 
 textarea {
   height: 200px;
+  margin-bottom: 60px;
+}
+.textarea {
   grid-area: tarea;
 }
+
+/* ----------------FOOTER--------------- */
+
+
+footer ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+footer li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+
+/* ----------------MEDIA QUERIES--------------- */
+
+
