@@ -238,12 +238,19 @@ footer li {
   }
 }
 
+@media sreen and (max-width: 645px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .section-1, .section-2, .contact {
     display: block;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    min-height: 240px;
   }
   .form-grid{
     max-width: 90%;
@@ -258,8 +265,9 @@ footer li {
     justify-content: center;
     align-items: center;
     max-width: 95%;
-    height: 90%;
+    height: 100%;
   }
+  
   p {
     line-height: 25px;
   }
@@ -267,6 +275,25 @@ footer li {
     margin: 15px auto;
   }
 }
+
+@media screen and (max-width: 480px) {
+  p{
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 3.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .button {
+    margin: 15px auto;
+  }
+}
+
 @media screen and (max-width: 300px) {
   header {
     height: 70vh;
@@ -276,7 +303,7 @@ footer li {
     padding-bottom: 5px;
   }
   .button {
-    margin-top: 0;
+    margin: 15px auto;
     padding: 10px 22px;
     font-size: 0.7rem;
   }
